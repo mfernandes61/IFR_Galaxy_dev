@@ -13,5 +13,8 @@ USER root
 RUN pip install "ipython[all]" 
 RUN pip install bioblend
 
+# Open port for Ipython notebooks
+EXPOSE 8888
+
 CMD ["/usr/bin/startup"]
 
